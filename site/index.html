@@ -152,14 +152,14 @@ footer{text-align:center;color:var(--sub);font-size:12px;margin-top:16px}
 const CONFIG = {
   // ① 학교 사이트 바로가기 : url 에 주소를 넣으면 버튼이 활성화돼요. (여러 개 가능)
   LINKS: [
-    { label: '🏫 학교 수학여행 안내 사이트', url: '' },
+    { label: '🏫 학교 수학여행 안내 사이트', url: 'https://sites.google.com/view/yoonkh6211a/%ED%99%88?pli=1&authuser=0' },
     // { label: '📋 안전 수칙 / 연락처', url: 'https://...' },
   ],
 
   // ② 구글 스프레드시트 연결 : Apps Script 웹 앱 주소(…/exec)를 넣으면
   //    모든 사람이 같은 일정을 보고, 수정하면 20초 안에 모두에게 반영돼요.
   //    비워두면 각자 기기에만 저장돼요.  (편집 비밀번호는 Apps Script 쪽에서 정해요)
-  SHEET_API: '',
+  SHEET_API: 'https://script.google.com/macros/s/AKfycbxZ9M_pX75ZljbCCxZwXJ_0MEXp2iBqxp65NpqB6xZ3gwY-OvwNbI-VeEmXCe1uX9IO/exec',
 
   // ③ 사이트 꺼져도 오는 푸시 알림 (Firebase) : 비워두면(null) 버튼이 비활성화돼요.
   PUSH: {
