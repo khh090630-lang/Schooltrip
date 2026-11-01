@@ -376,7 +376,7 @@ function renderNow(){
 }
 function renderTabs(){
   const today=nowKST().date;
-  $('#tabs').innerHTML=DAYS.map(d=>`<button class="${curDay===d.n?'on':''}" data-day="${d.n}">제${d.n}일 (${d.date.slice(6).replace('-','/').replace(/^0/,'')} ${d.dow})${d.date===today?'<span class="today">오늘</span>':''}</button>`).join('');
+  $('#tabs').innerHTML=DAYS.map(d=>`<button class="${curDay===d.n?'on':''}" data-day="${d.n}">제${d.n}일 (${d.date.slice(5).replace('-','/')} ${d.dow})${d.date===today?'<span class="today">오늘</span>':''}</button>`).join('');
 }
 function renderDay(){
   const n=curDay, d=DAYS[n-1], now=nowKST(), g=groupFor(n), segs=segments(n);
